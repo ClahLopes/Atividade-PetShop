@@ -1,0 +1,575 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Titillium+Web:wght@200;300&display=swap');
+
+/*@media screen and (min-width){
+
+}*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-padrão);
+}
+
+:root {
+    --cor0:#8e9df2;
+    --cor1:#7487d9;
+    --cor2:#5b71c0;
+    --cor3:#415aa7;
+    --cor4:#27448e;
+    --cor5:#b8e5fa;
+    --cor6:#91adb2;
+    --cor7:#1e5465;
+
+    --font-padrão: 'Titillium Web', sans-serif;
+    --font-destaque: 'Anton', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top:0;
+}
+ 
+main {
+    margin: 100px 0px 10px 10px;
+}
+
+section {
+    padding-bottom: 20px;
+}
+
+
+h1 {
+    background-image: linear-gradient(to right, var(--cor5),transparent);
+    padding: 10px 0px 10px 20px;
+    font-family: var(--font-destaque);
+    color: var(--cor4);
+    margin: 10px 0px 10px 0px;
+    font-size: 30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.274);
+}
+
+.logo img {
+    width: 50%;
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 10px;
+    width: 20%;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto; /*deixar a div no centro*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+    font-size: 18px ;
+    position: relative;
+    font-weight: bold;
+}
+
+.menu nav a:hover::after {
+    width: 35px;
+}
+
+.menu nav a::after {
+    content: " ";
+    border-radius: 5px;
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, black, var(--cor1));
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    transition: width 0.5s;
+}
+
+#bemvindo {
+    width: 80%;
+    height: 30%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61); /*offset-y | blur-radius | spread-radius | color */
+}
+
+.div-bemvindo, .divpaisobre, .div-pai-nossos-pets, .div-adocao {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+.secao-sobre {
+    background-color: var(--cor3); 
+    width: 350px;
+    height: 280px;
+    margin: 10px;
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.secao-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.titulo-secao-sobre {
+    background-image: url(imagens/backgroundimage.jpg);
+    opacity: 0.8;
+    font-weight: bold;
+    font-family: var(--font-destaque);
+    display: block;
+    width: 200px;
+}
+
+.texto-secao-sobre {
+    color: white;
+    text-align:normal;
+    width: 350px;
+    height: 30px;
+    padding: 10px;
+}
+
+.titulo-secao-sobre h2 {
+    padding-left: 20px;
+}
+
+.secao-equipe {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.member {
+	width: 250px;
+	height: 400px;
+	margin-bottom: 30px;
+	background-color: var(--cor0);
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.member img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+
+.member h3 {
+	margin-top: 0;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.member p {
+	margin-bottom: 0;
+	font-size: 18px;
+	text-align: center;
+}
+
+.div-pai-nossos-pets{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imagens-nossos-pets {
+    width: 30%;
+    border-radius: 5%;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61); /*offset-y | blur-radius | spread-radius | color */
+}
+
+.botao-fixo img {
+    position: fixed;
+    width: 80px;
+    right:0px;
+    bottom:20px;
+    border-radius: 50%;
+}
+
+/*PAGINA LOJA*/
+
+.div-pai-produtos-loja {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto-loja {
+	width: 200px;
+	height: 350px;
+    border-width: 1px;
+    border-style: solid;
+	border-color: #27448e;
+	padding: 20px;
+	box-sizing: border-box;
+    display: inline-block;
+}
+
+.produto-loja img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	margin-bottom: 20px;
+    
+}
+
+.produto-loja p {
+	margin-bottom: 0;
+	font-size: 18px;
+	text-align: center;
+}
+
+.produto-loja .preco {
+    color: red;
+    font-weight: bold;
+}
+
+/*SERVIÇOS*/
+
+.div-imagem-tosa {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.div-pai-servicos, .div-pai-loja{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-pai-servicos img {
+    width: 300px;
+	height: 400px;
+	margin-bottom: 30px;
+	background-color: var(--cor0);
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.div-texto-tosa {
+    display: flex;
+    background-color: var(--cor0);
+    width: 300px;
+    height: 400px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+.icons-produtos{
+    width: 100px;
+}
+
+.secao-produtos, .secao-redesocial{
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.secao-produtos img, .secao-redesocial img{
+    cursor: pointer;
+}
+
+.div-pai-produtos{ 
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons-promocao{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    margin: auto;
+}
+
+.div-pai-promocao{
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.secao-promocao {
+	margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.topico-promocao {
+	width: 200px;
+	height: 400px;
+	margin-bottom: 30px;
+	background-color: #acd8e6;
+	padding: 20px;
+	box-sizing: border-box;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.promocao {
+	font-size: 25px;
+    text-align: center;
+    padding-top: 20px ;
+}
+
+#cadastrar {
+    position:absolute;
+    background-color: #143e4b;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0 auto;
+    left: 65px;
+    top: 1400px;
+}
+
+#saiba-mais {
+    position:absolute;
+    background-color: #143e4b;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0 auto;
+    left: 330px;
+    top: 1400px;
+}
+
+#cadastro-pet {
+    position:absolute;
+    background-color: #143e4b;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0 auto;
+    left: 825px;
+    top: 1400px;
+}
+
+#participar {
+    position:absolute;
+    background-color: #143e4b;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0 auto;
+    right: 65px;
+    top: 1400px;
+}
+
+#app {
+    position:absolute;
+    background-color: #143e4b;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0 auto;
+    left: 585px;
+    top: 1400px;
+}
+
+.botao-promocao:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
+    background-color: #91adb2; /*Não está pegando*/
+    cursor: pointer;
+}
+
+.botao-promocao p {
+    text-align: center;
+    font-weight: bold;
+}
+
+/*CONTATO*/
+
+.div-pai-loja img {
+	margin-bottom: 30px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.div-texto-loja {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    padding: 10px;
+    padding-right: 50px;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
+}
+
+h2, p {
+    padding: 5px;
+}
+
+.div-texto-tosa{
+    align-content: center;
+}
+
+#texto-tosa h3{
+    font-weight: bold;
+    align-content: center;
+}
+
+/*ADOÇÃO*/
+
+#adocao {
+    width: 50%;
+    height: 30%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.div-pets-adocao{
+    display: flex;
+    justify-content: center;
+}
+
+.div-pets-adocao img{
+    width: 30%;
+}
+
+.box {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box-form{
+    width: 30%;
+    background: #1e546586;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+fieldset {
+    border: 3px solid #143e4b;
+    padding: 10px;
+}
+
+legend {
+    border: 1px solid #143e4b;
+    padding: 10px;
+    text-align: center;
+    background-color: #143e4b;
+    border-radius: 8px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none ;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events:none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: #143e4b;
+}
+
+#data_nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#submit {
+    background-image: linear-gradient(to right, #557984,#143e4b);
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right, #638e9b,#1a4856)
+}
+
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding:5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
