@@ -4,10 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Titillium+Web:wght@200;300&display=swap');
 
-/*@media screen and (min-width){
-
-}*/
-
 * {
     margin: 0px;
     padding: 0px;
@@ -278,7 +274,7 @@ h1 {
 }
 
 .div-pai-servicos img {
-    width: 300px;
+    	width: 300px;
 	height: 400px;
 	margin-bottom: 30px;
 	background-color: var(--cor0);
@@ -325,92 +321,48 @@ h1 {
     display: flex;
     width: 100px;
     justify-content: center;
-    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .div-pai-promocao{
     display: flex;
     flex-direction: row;
 	flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .secao-promocao {
+	display: flex;
 	margin-top: 30px;
-    margin-right: 10px;
-    margin-left: 10px;
+    	margin-right: 10px;
+    	margin-left: 10px;
 }
 
 .topico-promocao {
+	display: flex;
+	align-items: center;
+    	flex-direction: column;
 	width: 200px;
-	height: 400px;
-	margin-bottom: 30px;
+	padding-bottom: 20px;
 	background-color: #acd8e6;
-	padding: 20px;
 	box-sizing: border-box;
-    justify-content: center;
-    border-radius: 10%;
+    	border-radius: 10%;
 }
 
 .promocao {
-	font-size: 25px;
-    text-align: center;
-    padding-top: 20px ;
+	font-size: 20px;
+    	text-align: center;
+    	padding-top: 20px ;
 }
 
-#cadastrar {
-    position:absolute;
+.botao-promocao {
+    display: flex;
     background-color: #143e4b;
     color: white;
     padding: 5px;
     border-radius: 20px;
-    margin: 0 auto;
-    left: 65px;
-    top: 1400px;
-}
-
-#saiba-mais {
-    position:absolute;
-    background-color: #143e4b;
-    color: white;
-    padding: 5px;
-    border-radius: 20px;
-    margin: 0 auto;
-    left: 330px;
-    top: 1400px;
-}
-
-#cadastro-pet {
-    position:absolute;
-    background-color: #143e4b;
-    color: white;
-    padding: 5px;
-    border-radius: 20px;
-    margin: 0 auto;
-    left: 825px;
-    top: 1400px;
-}
-
-#participar {
-    position:absolute;
-    background-color: #143e4b;
-    color: white;
-    padding: 5px;
-    border-radius: 20px;
-    margin: 0 auto;
-    right: 65px;
-    top: 1400px;
-}
-
-#app {
-    position:absolute;
-    background-color: #143e4b;
-    color: white;
-    padding: 5px;
-    border-radius: 20px;
-    margin: 0 auto;
-    left: 585px;
-    top: 1400px;
+    place-items: center;
 }
 
 .botao-promocao:hover {
