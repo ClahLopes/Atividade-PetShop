@@ -356,6 +356,10 @@ h1 {
     	padding-top: 20px ;
 }
 
+#texto-cadastro-pet{
+    margin-top: 10px;
+}
+
 .botao-promocao {
     display: flex;
     background-color: #143e4b;
